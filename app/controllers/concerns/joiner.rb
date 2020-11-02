@@ -23,7 +23,7 @@ module Joiner
   def show_user_join
     # Get users name
     @name = if current_user
-      current_user.name
+      current_user.role
     elsif cookies.encrypted[:greenlight_name]
       cookies.encrypted[:greenlight_name]
     else
